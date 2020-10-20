@@ -20,7 +20,7 @@ This project is part of the Microverse curriculum in Ruby on Rails module!
 ## Table of Contents
 
 * [About the Project](#about-the-project)
-  * [Built With](#built-with)
+* [Built With](#built-with)
 * [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
 * [License](#license)
@@ -35,21 +35,19 @@ These activities can be grouped or categorized based on the users choice; the de
 
 To have this app on your pc, you need to:
 * have Ruby & Ruby on Rails installed in your computer
-* [download](git@github.com:evabanegacom/private-events.git) or clone this repo:
+* [download](git@github.com:abrormukimov/rails-capstone.git) or clone this repo:
   - Clone with SSH:
   ```
-    git@github.com:evabanegacom/private-events.git
+    git@github.com:abrormukimov/rails-capstone.git
   ```
   - Clone with HTTPS
   ```
-    https://github.com/evabanegacom/private-events.git
+    https://github.com/abrormukimov/rails-capstone.git
   ```
 * Open the terminal inside the clone directory and run the bundler:-
-  - ```$ bundler install```
+  - ```$ bundle install```
 * run rails db:migrate. This creates the database with the corresponding tables, columns and associations:-
   - ```$ rails db:migrate```
-* You can test the database by running:-
-  - ```$ rails console```
 
 ### Built With
 This project was built using these technologies.
@@ -62,12 +60,9 @@ This project was built using these technologies.
 <!-- CONTACT -->
 ## Contributors
 
-👤 **Admin 1** 
+👤 **Abror Mukimov**
 
-
-👤 **Precious**
-
-- GitHub: [@Precious](https://github.com/evabanegacom)
+- GitHub: [@Precious](https://github.com/abrormukimov)
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
