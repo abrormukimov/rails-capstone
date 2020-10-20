@@ -25,6 +25,8 @@ This project is part of the Microverse curriculum in Ruby on Rails module!
 * [Acknowledgements](#acknowledgements)
 * [License](#license)
 
+- Live Version: [Click Here](https://tranquil-dusk-15814.herokuapp.com/)
+
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
