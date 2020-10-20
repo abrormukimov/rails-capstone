@@ -1,0 +1,39 @@
+<br>
+<div class='main'>
+<section class='sec1'>
+  <div class='transact'>
+    <div><%= profile_pic %></div>
+    <div><p class='username'><%= current_user.name %></p></div>
+    <br>
+    <div class='acc'>
+      <div class='deal-name'><p class='acc2 deal-mar button is-link'><%= @deal.name %></p></div>
+      <br>
+    </div>
+    <br>
+    <div class='acc'>
+      <div><p class='acc2 has-text-white'>created by&nbsp;<%= @deal.author.name %></p></div>
+      <br>
+    </div>
+    <br>
+    <div class='acc'>
+      <div class='deal-name'><p class='acc2 button is-link'>Amount &nbsp;<%= @deal.amount%></p></div>
+      <br>
+    </div>
+    <br>
+    <div class='acc'>
+      <div><p class='acc2'>created&nbsp;<%= @deal.created_at.to_date.to_formatted_s(:long_ordinal)%></p></div>
+      <br>
+    </div>
+    <div class='acc'>
+      <div><p class='acc2'>associated groups&nbsp;(&nbsp;<%= @deal.groups.size%>&nbsp;)</p></div>
+      <br>
+    </div>
+    </div>
+</section>
+<div class='comment-form'><%= render partial: 'comments/form' %></div>
+<div class='comment'><%= render partial: 'deals/comment', collection: @deal.comments %></div>
+</div>
+
+
+
+

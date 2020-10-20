@@ -1,0 +1,72 @@
+<br>
+<div class='main'>
+<section class='sec1'>
+  <div class='transact'>
+    <div><%= profile_pic %></div>
+    <div><p class='username'><%= current_user.name %></p></div>
+    <br>
+    <div class='acc'>
+      <div class='account'><p class='icons'><i class="fa fa-cog set" aria-hidden="true"></p></i></div>
+      <div><p class='acc2'><%= link_to 'Account Settings', edit_user_registration_path, class: 'button is-link' %></div>
+      <br>
+    </div>
+    <br>
+    <div class='acc'>
+      <div class='account'><p class='icons'><i class="fa fa-credit-card-alt set" aria-hidden="true"></i></p></div>
+      <div><p class='acc2'><%= link_to 'All my transactions', group_deals_path, class: 'button is-info' %></div>
+      <br>
+    </div>
+    <br>
+    <div class='acc'>
+      <div class='account'><p class='icons'><i class="fa fa-users" aria-hidden="true"></p></i></div>
+      <div><p class='acc2'><%= link_to 'All Groups', groups_path, class: 'has-text-white' %></div>
+      <br>
+    </div>
+    <br>
+    <div class='acc'>
+      <div class='account'><p class='icons'><i class="fa fa-money" aria-hidden="true"></i></p></div>
+      <div><p class='acc2'><%= link_to 'All external transactions', external_path, class: 'has-text-white' %></div>
+      <br>
+    </div>
+    <br>
+    <div class='acc'>
+      <div class='account'><p class='icons'><i class="fa fa-gift" aria-hidden="true"></i></p></div>
+      <div><p class='acc2'><%= link_to 'All deals', deals_path, class: 'has-text-white' %></div>
+      <br>
+    </div>
+    <br>
+  </div>
+</section>
+
+ <section class='sec5'>
+  <div class='whole'>
+    <div class='first'>
+      <p class='iconss'><i class="fa fa-bars" aria-hidden="true"></i></p>
+      <p class='iconss'>Transactions</p>
+      <p class='iconss'><i class="fa fa-search" aria-hidden="true"></i></p>
+    </div>
+    <div class='recent'>
+      <div class='most'><p class='para'>most recent</p></div>
+      <div class='most1'><p class='para1'>most recent</p></div>
+  </div>
+  <div class='cost'>
+    <div class='total'><p class='button is-info'>Total deals</p></div>
+    <div class='tot'><p class='button is-success'>$&nbsp;<%= sum_external_deals %></p></div>
+  </div>
+  <br>
+  <% @external.each do |g| %>
+  <div class='groups'>
+    <div class='amt'><p amount class=' button is-info'><%= link_to 'open', g, class: 'has-text-white' %></p></div>
+    <div class='create'>
+      <p class='grup has-text-black drop'><%= g.name %></p>
+      <p class='date has-text-black dates1'><%= g.created_at.to_date.to_formatted_s(:long_ordinal) %></p>
+    </div>
+    <div class='amt'><p amount class='pamt'><%= g.amount %></p></div>
+    <% end %>
+  </div>
+  <div class='last'>
+    <div class='scan'><p>scan</p></div>
+  </div>
+  </div>
+  </section>
+</div>

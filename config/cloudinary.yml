@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: spetsnaz
+  api_key: '571184654937251'
+  api_secret: pXBpdlBKb_CW9SAXcOKDmFuvepA
+  enhance_image_tag: true
+  static_file_support: false
+production:
+  cloud_name: spetsnaz
+  api_key: '571184654937251'
+  api_secret: pXBpdlBKb_CW9SAXcOKDmFuvepA
+  enhance_image_tag: true
+  static_file_support: true
+test:
+  cloud_name: spetsnaz
+  api_key: '571184654937251'
+  api_secret: pXBpdlBKb_CW9SAXcOKDmFuvepA
+  enhance_image_tag: true
+  static_file_support: false

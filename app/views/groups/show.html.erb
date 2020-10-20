@@ -1,0 +1,62 @@
+<br>
+<div class='main'>
+<section class='sec1'>
+  <div class='transact'>
+    <div><%=image_tag(@group.icon, class: 'pic2') %></div>
+    <div><p class='username'><%= current_user.name %></p></div>
+    <br>
+    <div class='acc'>
+      <div class='deal-name'><p class='deal-title button is-link'><%= @group.name.upcase() %></p></div>
+      <br>
+    </div>
+    <br>
+    <div class='acc'>
+      <div><p class='acc2 has-text-white'>Deals&nbsp;(&nbsp;<%= @group_deals.size %>&nbsp;)</p></div>
+      <br>
+    </div>
+    <br>
+    <div class='acc'>
+      <div class='deal-name'><p class='acc2 button is-link'><%= @group.created_at.to_date.to_formatted_s(:long_ordinal)%></p></div>
+      <br>
+    </div>
+    <br>
+    <div class='acc'>
+      <div><p class='acc2'>Created by&nbsp;<%= @group.user.name %></p></div>
+      <br>
+    </div>
+    <br>
+</section>
+
+<section class='sec2'>
+  <div class='whole'>
+    <div class='first'>
+      <p class='iconss'><i class="fa fa-bars" aria-hidden="true"></i></p>
+      <p class='iconss'>DEALS for group</p>
+      <p class='iconss'><i class="fa fa-search" aria-hidden="true"></i></p>
+    </div>
+    <div class='recent'>
+      <div class='most'><p class='para'>most recent</p></div>
+      <div class='most1'><p class='para1'>most recent</p></div>
+  </div>
+  <div class='cost'>
+    <div class='total'><p class='button is-info'>Total deals</p></div>
+    <div class='tot'><p class='button is-success has-text-weight-bold'>$&nbsp;<%= sum_of_deals %></p></div>
+  </div>
+  <br>
+  <% @group_deals.each do |deal| %>
+  <div class='groups'>
+      <div class='hass'><p class='has-text-black'><%= deal.author.name %></p></div>
+    <div class='create butt'>
+    <div class='mta'><p><%= link_to deal.name, deal, class: 'mtap button is-info' %></p></div>
+      <p class='grup-d has-text-black'><%= deal.created_at.to_date.to_formatted_s(:long_ordinal) %></p>
+    </div>
+      <p class='has-text-black'><%= deal.amount %></p>
+    <% end %>
+  </div>
+  <div class='last'>
+    <div class='scan'><p><%= link_to 'Add New', new_deal_path, class: 'has-text-white' %></p></div>
+  </div>
+  </div>
+  </section>
+</div>
+

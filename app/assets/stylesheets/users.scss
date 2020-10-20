@@ -1,0 +1,349 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.transact {
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #377Bc2;
+  padding-top: 20px;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}
+
+.username {
+  color: white;
+  font-weight: 700;
+  font-size:14px;
+}
+
+.account {
+  float: left;
+}
+
+.acc {
+  padding-left: 10px;
+  width: 100%;
+  border-bottom: 1px solid white;
+}
+
+.acc2 {
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.deal-mar {
+  margin-left: 10px;
+}
+
+.icons {
+  color: white;
+  font-size: 20px;
+}
+
+.set {
+  margin-top: 10px;
+}
+
+.setting {
+  margin-top: 10px;
+}
+
+.whole {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: rgb(253, 252, 252);
+}
+
+.main {
+  display: flex;
+}
+
+.pic2 {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}
+
+.first {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  background-color: #377Bc2;
+  padding-top: 30px;
+}
+
+.sec1 {
+  width: 23%;
+}
+
+.sec2 {
+  width: 30%;
+  margin-left: 100px;
+}
+
+.bul {
+  position: relative;
+  left: 100px;
+  top: -50px;
+}
+
+.sec3 {
+  width: 25%;
+}
+
+.section1 {
+  width: 50%;
+  height: 500px;
+}
+
+.recent {
+  width: 100%;
+  background-color: #377Bc2;
+  padding-top: 30px;
+}
+
+.most {
+  float: right;
+  width: 40%;
+  padding-bottom: 10px;
+}
+
+.most1 {
+  float: right;
+}
+
+.para {
+  margin-left: 20px;
+  color: white;
+  font-size: 14px;
+
+}
+
+.para1 {
+  margin-left: 70px;
+  color: white;
+  font-size: 14px;
+}
+
+.iconss {
+  color: white;
+  font-size: 20px;
+}
+
+.total {
+  float: left;
+}
+
+.tot {
+  float: right;
+}
+
+.tot p {
+  font-size: 14px;
+  padding-right: 20px;
+}
+
+.total p {
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+.cost {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: white;
+  border-bottom: 2px solid red;
+}
+
+.groups {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.create {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.last {
+  background-color: green;
+  width: 100%;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+.scan {
+  border: 2px solid white;
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.scan p {
+  font-size: 30px;
+}
+
+.grup {
+  margin-top: 10px;
+}
+
+.pics {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+}
+
+.amtp {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #377Bc2;
+  font-weight: 700;
+}
+
+.comment {
+  width: 30%;
+  float: right;
+  margin-left: 60px;
+}
+
+.comment-form {
+  width: 30%;
+  margin-left: 30px;
+}
+
+.text{
+  font-size: 14px;
+  color: black;
+}
+
+.deal-name {
+  width: 50%;
+  position: relative;
+  left: 70px;
+}
+
+.img-section {
+  position: relative;
+  right: -28em;
+  top: -29em;
+}
+
+.update {
+  position: relative;
+  top: -25em;
+  right: -28em
+}
+
+.bgi {
+  margin-top: 20px;
+}
+
+.bgi img {
+  width: 100%;
+  height: 400px;
+}
+
+.sec4 {
+  width: 40%;
+  margin-left: 100px;
+}
+
+.empty {
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+  background-color: rgb(240, 229, 229);
+  padding-bottom: 20px;
+}
+
+.lift {
+  margin-top: -5px;
+}
+
+.drop {
+  position: relative;
+  top: -10px;
+}
+
+.sec5 {
+  width: 30%;
+  margin-left: 100px;
+}
+
+.date {
+  margin-top: 20px;
+}
+
+.sec6 {
+  width: 30%;
+  margin-left: 100px;
+}
+
+.dates {
+  position: relative;
+  top: -20px;
+}
+
+.dates1 {
+  position: relative;
+  top: -30px;
+}
+
+.dates2 {
+  position: relative;
+  top: -20px;
+}
+
+.grup-lists {
+  display: flex;
+  flex-wrap: wrap;
+  color: red;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.pamt {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #377Bc2;
+  font-weight: 700;
+}
+
+.butt {
+  padding-bottom: 20px;
+}
+
+.mtap {
+  position: relative;
+  top: -4px;
+  font-size: 14px;
+  color: #377Bc2;
+  font-weight: 700;
+}
+
+.grup-d {
+  position: relative;
+  top: -4px;
+}
+
+.deal-title {
+  margin-left: 40px;
+  font-weight: 700;
+}

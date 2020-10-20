@@ -1,0 +1,2 @@
+class DealingsController < ApplicationController
+end

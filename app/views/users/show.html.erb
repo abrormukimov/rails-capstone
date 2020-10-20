@@ -1,0 +1,39 @@
+<br>
+<div class='main'>
+<section class='sec1'>
+  <div class='transact'>
+    <div><%= profile_pic %></div>
+    <div><p class='username'><%= current_user.name %></p></div>
+    <br>
+    <div class='acc'>
+      <div class='account'><p class='icons'><i class="fa fa-cog set" aria-hidden="true"></p></i></div>
+      <div><p class='acc2'><%= link_to 'Account Settings', edit_user_registration_path, class: 'button is-info is-inverted' %></div>
+      <br>
+    </div>
+    <br>
+    <div class='acc'>
+      <div class='account'><p class='icons'><i class="fa fa-credit-card-alt set" aria-hidden="true"></i></p></div>
+      <div><p class='acc2'><%= link_to 'All my transactions', group_deals_path, class: 'button is-info is-inverted' %></div>
+      <br>
+    </div>
+    <br>
+    <div class='acc'>
+      <div class='account'><p class='icons setting'><i class="fa fa-users" aria-hidden="true"></p></i></div>
+      <div><p class='acc2'><%= link_to 'All Groups', groups_path, class: 'button is-info is-inverted' %></div>
+      <br>
+    </div>
+    <br>
+    <div class='acc'>
+      <div class='account'><p class='icons'><i class="fa fa-money set" aria-hidden="true"></i></p></div>
+      <div><p class='acc2'><%= link_to 'All external transactions', external_path, class: 'button is-info is-inverted' %></div>
+      <br>
+    </div>
+    <br>
+    <div class='acc'>
+      <div class='account'><p class='icons'><i class="fa fa-gift set" aria-hidden="true"></i></p></div>
+      <div><p class='acc2'><%= link_to 'All deals', deals_path, class: 'button is-info is-inverted' %></div>
+      <br>
+    </div>
+  </div>
+</section>
+</div>
