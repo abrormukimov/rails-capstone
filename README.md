@@ -62,7 +62,7 @@ This project was built using these technologies.
 
 👤 **Abror Mukimov**
 
-- GitHub: [@Precious](https://github.com/abrormukimov)
+- GitHub: [@Abror](https://github.com/abrormukimov)
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
