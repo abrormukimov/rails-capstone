@@ -6,7 +6,6 @@
   <div class="control">
     <%= f.input :name, required: false, input_html: { class: "input"}, wrapper: false, label_html: { class: "label" } %>
     <%= f.input :body, label: 'comment about it', input_html: { class: 'textarea' }, wrapper: false, label_html: {class: 'label'}, placeholder: 'say your opinion', autofocus: true %>
-    <%#= f.association :deal %>
   </div>
 </div>
 <%= f.button :submit, class: 'button is-info is-fullwidth' %>
