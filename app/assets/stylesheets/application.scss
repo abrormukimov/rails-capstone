@@ -14,25 +14,25 @@
  *= require_self
  */
 
- @import "bulma";
+@import "bulma";
 
- * {
+* {
   margin: 0;
   padding: 0;
   border: none;
- }
-  
- .pic {
-  width:50px;
+}
+
+.pic {
+  width: 50px;
   height: 100px;
   border-radius: 30%;
   margin-top: 0.4em;
- }
+}
 
- .pic1 {
+.pic1 {
   width: 150px;
   height: 150px;
- }
+}
 
 .navbar {
   background-color: red;
@@ -44,22 +44,24 @@
 }
 
 .navbar-brand .title {
-	color: white;
+  color: white;
 }
 
 // round images
 .image {
-	border-radius: 50%;
-	img {
-		border-radius: 50%;
-	}
+  border-radius: 50%;
+
+  img {
+    border-radius: 50%;
+  }
 }
+
 .notification:not(:last-child) {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .navcol {
-  background-color: #377Bc2;
+  background-color: #377bc2;
 }
 
 .group-pic {

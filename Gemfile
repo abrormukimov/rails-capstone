@@ -29,6 +29,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'activestorage'
 gem 'cloudinary'
 
+gem 'rubocop'
+
 # Use ActiveStorage variant
 gem 'hirb'
 gem 'mini_magick', '~> 4.8'

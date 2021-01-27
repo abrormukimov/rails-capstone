@@ -3,30 +3,22 @@ class GroupsController < ApplicationController
   before_action :authenticate_user!
   helper_method :sum_of_deals
 
-  # GET /deals
-  # GET /deals.json
   def index
     @groups = Group.all.order('name ASC').includes(icon_attachment: :blob)
     @user = current_user
   end
 
-  # GET /deals/1
-  # GET /deals/1
   def show
     @group = Group.find(params[:id])
     @group_deals = @group.deals.includes(:author)
   end
 
-  # GET /deals/new
   def new
     @group = current_user.groups.build
   end
 
-  # GET /deals/1/edit
   def edit; end
 
-  # POST /deals
-  # POST /deals.json
   def create
     @group = current_user.groups.build(group_params)
 
@@ -41,8 +33,6 @@ class GroupsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /deals/1
-  # PATCH/PUT /deals/1.json
   def update
     respond_to do |format|
       if @group.update(deal_params)
@@ -55,8 +45,6 @@ class GroupsController < ApplicationController
     end
   end
 
-  # DELETE /deals/1
-  # DELETE /deals/1.json
   def destroy
     @group.destroy
     respond_to do |format|
@@ -67,12 +55,10 @@ class GroupsController < ApplicationController
 
   private
 
-  # Use callbacks to share common setup or constraints between actions.
   def set_deal
     @group = Group.find(params[:id])
   end
 
-  # Only allow a list of trusted parameters through.
   def group_params
     params.require(:group).permit(:name, :icon)
   end
