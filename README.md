@@ -33,9 +33,13 @@ To have this app on your pc, you need to:
   ```
 * Open the terminal inside the clone directory and run the bundler:-
   - ```$ bundle install```
+ feature
 * run rails db:create. This creates the database with the corresponding tables, columns and associations:-
   - ```$ rails db:create```
 * run rails db:migrate. This migrates the database with the corresponding tables, columns and associations:-
+
+* run rails db:migrate. This creates the database with the corresponding tables, columns and associations:-
+ development
   - ```$ rails db:migrate```
 
 ### Built With
